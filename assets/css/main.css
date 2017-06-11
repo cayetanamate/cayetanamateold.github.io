@@ -70,7 +70,11 @@ nav-bar{
 
 .nav-bar ul li{
 	display: inline;
+	padding: 2%;
+
 }
+
+
 
 .side-nav {
 	display:none;
