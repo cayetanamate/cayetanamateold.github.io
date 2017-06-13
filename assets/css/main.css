@@ -196,15 +196,18 @@ nav-bar {
     margin: 0 auto;
     margin-top: 10%;
     width: 60%;
+    /*background-color: #eeeeee;*/
+    box-shadow: none;
+    color: grey;
 }
 
 #message {
     background-color: #eeeeee;
     /*border-color: grey;*/
-    box-shadow: none;
+    /*box-shadow: none;*/
     height: 200px;
     margin: 10px 0 10px 0;
-    color: grey;
+    /*color: grey;*/
     /*border-radius: 2px;*/
     resize: none;
     input-placeholder: #000;
@@ -213,10 +216,20 @@ nav-bar {
 #email {
     background-color: #eeeeee;
     /*border-color: grey;*/
-    box-shadow: none;
+    /*box-shadow: none;*/
     margin: 25px 0 15px 0;
-    color: grey;
+    /*color: grey;*/
     /* border-radius: 2px;*/
+}
+
+#message:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#email:focus {
+    border: none;
+    box-shadow: none;
 }
 
 #submit {
