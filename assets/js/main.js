@@ -1,9 +1,3 @@
-/*
-	Visualize by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 $(function() {
 
 
@@ -55,7 +49,7 @@ $(function() {
             console.log("click");
             console.log(event.target);
             $(".thumbnails").fadeTo(300, 0);
-            $("#categories ul li a").css("font-weight", "initial");
+            $("#categories ul li a").css("font-weight", "300");
             $(event.target).css({ "font-weight": "900" });
             setTimeout(function() {
                 $(".thumbnails div a img").css("display", "none");
