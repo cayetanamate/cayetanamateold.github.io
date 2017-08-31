@@ -1,0 +1,171 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Cayetana Mate Contact me</title>
+  <meta name="description" content="contact email cayetana mate graphic designer and illustrator based madrid" />
+  <meta name="keywords" content="cayetana, cayetana mate, design, diseño, graphic, illustration, ilustracion, grafico, madrid, catografia, maps, designer" />
+  <link href="favicon.png" rel="icon" title="favicon" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="cayetanamate.com">
+
+<!--Style-->
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+</head>
+
+<body>
+
+<!--Preloader-->
+
+<div class="preloader" id="preloader">
+    <div class="item">
+      <div class="spinner">
+      </div>
+    </div>
+</div>
+
+<div class="opacity-nav">
+
+        <div class="menu-index" id="buttons" style="z-index:999999">
+        <i class="fa  fa-close"></i>
+        </div>
+
+      <ul class="menu-fullscreen">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!--Menu que no funciona por el ajax ese
+    <ul class="menu-fullscreen">
+      <li><a class="ajax-link" href="index.html">Home</a></li>
+      <li><a class="ajax-link" href="portfolio.html">Portfolio</a></li>
+      <li><a class="ajax-link" href="about.html">About</a></li>
+      <li><a class="ajax-link" href="contact.html">Contact</a></li>
+    </ul> -->
+
+</div>
+
+
+  <!--Header-->
+  <header id="fullscreen">
+    
+      <div class="logo" id="full"><a class="logo" href="index.html">CAYETANA MATE</a></div>
+      
+        <div class="menu-index" id="button">
+        <i class="fa fa-bars"></i>
+        </div>
+
+  </header>
+
+  <div class="clear"></div>
+
+  <!--Content-->
+
+  <div class="content" id="ajax-content">
+
+        <div class="text-intro">
+
+          <h1>Contact</h1>
+          <p>I hope you enjoyed my work!<br/>Do not hesitate to drop me a line if you want to get in touch.</p>
+
+          <form method="post" action="?" data-jkit="[form:validateonly=true]">
+          
+          <div class="contact-one">
+            <p>
+              <label for="miniusername">Username:</label><br/>
+              <input name="miniusername" id="miniusername" data-jkit="[validate:required=true;min=3;max=10;error=Please enter your username (3-10 characters)]">
+            </p>
+          </div>  
+          
+          <div class="contact-two">  
+            <p>
+              <label for="miniemail">E-mail:</label><br />
+              <input name="miniemail" id="miniemail" data-jkit="[validate:required=true;strength=50;error=Please write your email]">
+            </p>
+          </div>  
+          
+          <div class="contact-three">  
+            <p>
+              <label>Message:</label><br />
+              <textarea id="message" name="message"></textarea><br/><br/>
+              
+              <input class="button-submit" name="send" type="submit" value="SUBMIT" />
+            </p>
+          </div>            
+            
+            <p>
+            </p>
+          </form>
+          
+          
+        </div>
+        
+	<br/><br/><br/><br/><br/><br/><br/><br/>      
+  </div>
+
+
+
+
+  <!--Home Sidebar-->
+
+<div id="ajax-sidebar"></div>
+
+
+
+  <!--Footer-->
+  <footer>
+
+    <div class="footer-margin">
+      <div class="social-footer">
+        <a href="https://www.behance.net/cayetanamate"><i class="fa fa-behance"></i></a>
+        <a href="https://www.instagram.com/cayetanamate_design/"><i class="fa fa-instagram"></i></a>
+        <a href="https://es.pinterest.com/cayetanamate/"><i class="fa fa-pinterest"></i></a>
+        <a href="https://www.linkedin.com/in/cayetanamate/"><i class="fa fa-linkedin"></i></a>
+      
+      </div>     
+      <div class="copyright">© Copyright 2017 All Rights Reserved cayetanamate.com</div>
+      
+
+    
+    </div>
+
+
+  </footer>
+
+
+<!--Scripts-->
+
+  <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+  <script src="js/typed.js" type="text/javascript"></script>
+  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>  
+  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
+  <script src="js/jquery.jkit.1.2.16.min.js"></script>
+ 
+  <script src="js/script.js" type="text/javascript"></script>
+  
+	<script>
+    $('#button, #buttons').on('click', function() {
+      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
+    // Animation complete.
+    });
+  </script>
+
+
+</body>
+</html>
