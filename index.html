@@ -4,19 +4,24 @@
 <head>
 
   <meta charset="utf-8">
-  <title>CAYETANA MATE</title>
-  <meta name="description" content="Cayetana Mate is a graphic designer and illustrator based in Madrid, Spain, who specializes in maps, typography and illustration." />
-  <meta name="keywords" content="cayetana, cayetana mate, design, diseño, graphic, illustration, ilustracion, grafico, madrid, catografia, maps, designer" />
+  <title>Cayetana Mate | Graphic Designer & Illustrator</title>
+  <meta name="description" content="Cayetana Mate is a graphic designer and illustrator based in Ibiza, Spain, who specializes in graphic design, branding and illustration." />
   <link href="favicon.png" rel="icon" title="favicon" type="image/png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="author" content="cayetanamate.com">
+  <meta property="og:title" content="Cayetana Mate - Graphic Designer & Illustrator">
+<meta property="og:description" content="Portfolio of Cayetana Mate, graphic designer and illustrator.">
+<meta property="og:image" content="img/preview.jpg">
+<meta property="og:url" content="https://cayetanamate.com">
+<meta name="twitter:card" content="summary_large_image">
 
 <!--Style-->
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-responsive.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -26,14 +31,67 @@
 
 <body>
 
-<!--Preloader-->
+<!--Preloader-->	
+<!-- Google Fonts (Raleway) -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
+<!-- Preloader -->
 <div class="preloader" id="preloader">
-    <div class="item">
-      <div class="spinner">
-      </div>
-    </div>
+  <div class="preloader-message">Ta-cháaaaaaan…!</div>
 </div>
+
+<style>
+/* Estilos del preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000; /* Fondo negro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease; /* fade-out suave */
+}
+
+.preloader.fade-out {
+  opacity: 0;
+  pointer-events: none; /* evita interacción mientras desaparece */
+}
+
+.preloader-message {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff; /* Texto en blanco */
+  animation: fadeInOut 1.5s ease-in-out;
+}
+
+/* Animación del mensaje */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: scale(0.9); }
+  20% { opacity: 1; transform: scale(1); }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: scale(1.1); }
+}
+</style>
+
+<script>
+  window.addEventListener("load", function(){
+    setTimeout(function(){
+      const preloader = document.getElementById("preloader");
+      preloader.classList.add("fade-out"); // inicia el fade-out
+      setTimeout(() => {
+        preloader.style.display = "none"; // elimina del DOM después de 0.5s
+      }, 500);
+    }, 1500); // espera 1.5s antes de iniciar fade-out
+  });
+</script>
+
 
 <div class="opacity-nav">
 
@@ -53,9 +111,9 @@
     
       <div class="logo" id="full"><a class="logo" href="index.html">CAYETANA MATE</a></div>
       
-        <div class="menu-index" id="button">
-        <i class="fa fa-bars"></i>
-        </div>
+        <div class="menu-index" id="button" aria-label="Menu">
+  		<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
 
   </header>
 
@@ -67,16 +125,16 @@
 
 
 
-        
+       
 
          
           <div class="text-intro" id="site-type">
 
-             <h1>If you think <br/>good design <br/>is expensive,<br/> you should look <br/>at the cost <br/>of bad design.</h1>
+             <h1>New look<br> under construction.</h1>
 
-          <p>Here you have a selection of my latest works, if you want to see more, click on the image. Hope you like them!</p>
+          <p> Meanwhile, here’s a peek at some of my latest work. Hope you like them!</p>
 
-        </div>
+</div>
 
 
   <!--Portfolio grid-->
@@ -84,18 +142,19 @@
   <ul class="portfolio-grid">
 
     <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/36daysofplants.png">
+      <img src="img/portfolio/36daysofplants.png" alt="36 Days of Plants illustration by Cayetana Mate">
         <a href="https://www.behance.net/gallery/87341803/36DAYSOFPLANTS">  
           <div class="grid-hover">
             <h1>#36DAYSOFPLANTS</h1>
             <p>Illustration</p>
           </div>
         </a>
+		</li>
 
 
 
       <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/invisibles_mate.jpg">
+      <img src="img/portfolio/invisibles_mate.jpg" alt="invisibles by Cayetana Mate">>
         <a href="https://www.behance.net/gallery/88873199/Invisibles">  
           <div class="grid-hover">
             <h1>INVISIBLES</h1>
@@ -106,7 +165,7 @@
 
   
       <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/36daysoftype-cayetana-mate.jpg">
+      <img src="img/portfolio/36daysoftype-cayetana-mate.jpg" alt="36 Days of Type by Cayetana Mate">>
         <a href="https://www.behance.net/gallery/64706061/36-Days-of-Type-2018">  
           <div class="grid-hover">
             <h1>#36DAYSOFTYPE</h1>
