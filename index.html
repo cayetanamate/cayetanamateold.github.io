@@ -31,66 +31,53 @@
 
 <body>
 
-<!--Preloader-->	
-<!-- Google Fonts (Raleway) -->
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-
-<!-- Preloader -->
+<!-- PRELOADER -->
 <div class="preloader" id="preloader">
-  <div class="preloader-message">Ta-cháaaaaaan…!</div>
+  <div class="item">
+    <span class="preloader-text">TA-CHÁN…</span>
+  </div>
 </div>
 
 <style>
-/* Estilos del preloader */
+/* Preloader estilos */
 .preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000000; /* Fondo negro */
+  background: #000; /* fondo negro */
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
-  opacity: 1;
-  transition: opacity 0.5s ease; /* fade-out suave */
 }
 
-.preloader.fade-out {
-  opacity: 0;
-  pointer-events: none; /* evita interacción mientras desaparece */
-}
-
-.preloader-message {
+.preloader .preloader-text {
+  color: #fff; /* texto blanco */
   font-family: 'Raleway', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 48px;
   letter-spacing: 2px;
-  color: #ffffff; /* Texto en blanco */
-  animation: fadeInOut 1.5s ease-in-out;
+  animation: fadeout 0.6s ease-in forwards;
+  animation-delay: 0.6s; /* tiempo antes de que empiece a desaparecer */
 }
 
-/* Animación del mensaje */
-@keyframes fadeInOut {
-  0% { opacity: 0; transform: scale(0.9); }
-  20% { opacity: 1; transform: scale(1); }
-  80% { opacity: 1; }
-  100% { opacity: 0; transform: scale(1.1); }
+@keyframes fadeout {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.2); }
 }
 </style>
 
 <script>
-  window.addEventListener("load", function(){
-    setTimeout(function(){
-      const preloader = document.getElementById("preloader");
-      preloader.classList.add("fade-out"); // inicia el fade-out
-      setTimeout(() => {
-        preloader.style.display = "none"; // elimina del DOM después de 0.5s
-      }, 500);
-    }, 1500); // espera 1.5s antes de iniciar fade-out
-  });
+document.addEventListener("DOMContentLoaded", function() {
+  const preloader = document.getElementById('preloader');
+  setTimeout(() => {
+    preloader.style.display = 'none';
+  }, 1200); // desaparece rápido, después de 1.2s
+});
 </script>
+
 
 
 <div class="opacity-nav">
@@ -263,16 +250,6 @@
         </a>      
     </li>   
 
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/pescanova.jpg">
-        <a class="ajax-link" href="https://www.behance.net/gallery/68826531/Pescanova-Social-Media">  
-          <div class="grid-hover">
-            <h1>Pescanova</h1>
-            <p>Social Media</p>
-          </div>
-        </a>      
-    </li>  
-
 
      <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
       <img src="img/portfolio/villa-de-pedraza-box.jpg">
@@ -308,14 +285,14 @@
 
     <div class="footer-margin">
       <div class="social-footer">
-        <a href="https://www.behance.net/cayetanamate"><i class="fa fa-behance"></i></a>
         <a href="https://www.instagram.com/cayetanamate/"><i class="fa fa-instagram"></i></a>
-        <a href="https://es.pinterest.com/cayetanamate/"><i class="fa fa-pinterest"></i></a>
+		<a href="https://www.behance.net/cayetanamate"><i class="fa fa-behance"></i></a>
         <a href="https://www.linkedin.com/in/cayetanamate/"><i class="fa fa-linkedin"></i></a>
       
       </div>     
-      <div class="copyright">© Copyright 2020 All Rights Reserved cayetanamate.com</div>
-       
+      <div class="copyright">
+ 	  © 2025 Cayetana Mate. All rights reserved.
+      
     </div>
 
 
