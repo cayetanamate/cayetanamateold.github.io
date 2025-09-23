@@ -84,7 +84,7 @@ h3{
 
 
 
-/* ************************** NAVIGATION OPACITY ************************** */ 
+/* ************************** NAVIGATION OPACITY ANTIGUO ************************** 
 
 .opacity-nav{ 
 	position:fixed; 
@@ -111,6 +111,66 @@ ul.menu-fullscreen li{
 ul.menu-fullscreen li > a{ color:#999999; border:0; } 
 ul.menu-fullscreen li > a:hover{ color:#ffffff; } #full{ width:1140px; position: relative; top:0; margin:0 auto; z-index: 9997; } #fullscreen{ display:none; position:absolute; top:0; width:100%; margin:0 auto; height:80px; z-index: 9998; } 
 
+ */
+
+
+/* ************************** NAVIGATION OPACITY ************************** */ 
+
+.opacity-nav { 
+	position: fixed; 
+	display: none; 
+	width: 100%; 
+	height: 100%; 
+	top: 0; 
+	z-index: 9999; 
+	background: rgba(0, 0, 0, 0.95); 
+} 
+
+ul.menu-fullscreen { 
+	width: 100%; 
+	top: 50%; 
+	position: absolute; 
+	height: 280px; 
+	margin-top: -140px; 
+	list-style: none;
+	padding: 0;
+}
+
+ul.menu-fullscreen li { 
+	font-size: 35px; 
+	text-align: center; 
+	line-height: 70px; 
+	font-weight: 500; 
+}
+
+ul.menu-fullscreen li > a { 
+	color: #999999; 
+	border: 0; 
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul.menu-fullscreen li > a:hover { 
+	color: #ffffff; 
+}
+
+#full { 
+	width: 1140px; 
+	position: relative; 
+	top: 0; 
+	margin: 0 auto; 
+	z-index: 9997; 
+}
+
+#fullscreen { 
+	display: block;  /* Antes estaba en none, ahora se muestra */
+	position: fixed;  /* Fijo para que siempre esté visible */
+	top: 0; 
+	width: 100%; 
+	height: 80px; 
+	z-index: 9998; 
+	background: none; 
+}
 
 /* ************************** HEADER ************************** */ 
 
@@ -283,7 +343,15 @@ li.grid-item img{ width:360px; }
 /* ************************** FOOTER ************************** */ 
 
 #footer-box { height:150px; margin-top:75px;} 
-footer{ background: #f1f1f1; width:100%; margin-top:150px; height:200px; overflow:hidden; position:relative; z-index:10;} 
+footer{ 
+	background: #f1f1f1; 
+	width:100%;
+	margin-top:150px; 
+	height:200px;
+	overflow:hidden; 
+	position:relative; 
+	z-index:10;} 
+
 .footer-margin{ width:1140px; margin: 30px auto; line-height: 100px; } #footer-left{text-align:left;} 
 .footer-margin .copyright{ color: #686868; letter-spacing: 1px; font-size: 12px; width: 100%; text-align:center; float: left; } 
 .footer-margin .social-footer{ color: #686868; letter-spacing: 1px; font-size: 25px; width: 100%; text-align:center; float: left; } 
