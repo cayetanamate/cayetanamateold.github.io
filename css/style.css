@@ -154,7 +154,7 @@ ul.menu-fullscreen li{
 }
 
 ul.menu-fullscreen li > a{
-  color:#ffffff;
+  color:#999999;
   border:0;
 }
 
@@ -508,7 +508,6 @@ PORTFOLIO GRID
   float:left;
   text-align:right;
 }
-
 
 #ajax-content{width:100%;}
 
