@@ -153,15 +153,15 @@ ul.menu-fullscreen li{
   font-weight:500;
 }
 
-ul.menu-fullscreen li > a {
-  color: #ffffff; /* blanco para fondo negro */
-  border: 0;
-  /*text-decoration: none; /* opcional, quita subrayado */
+ul.menu-fullscreen li > a{
+  color:#999999;
+  border:0;
 }
 
-ul.menu-fullscreen li > a:hover {
-  color: #999999; /* gris al pasar el cursor */
+ul.menu-fullscreen li > a:hover{
+  color:#ffffff;
 }
+
 
 #full{
   width:1140px;
@@ -250,7 +250,7 @@ ul.social-icon a:hover{
 }
 
 .menu-index i:hover{
-  color:white;
+  color:#c3c3c3;
 }
 
 
@@ -508,6 +508,7 @@ PORTFOLIO GRID
   float:left;
   text-align:right;
 }
+
 
 #ajax-content{width:100%;}
 
