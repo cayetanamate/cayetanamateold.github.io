@@ -41,16 +41,13 @@
 
 <div class="opacity-nav">
 
-      <!--ES ESTE EL PROBLEMA DE LA HAMBURGUESA?
-		<div class="menu-index" id="buttons" style="z-index:999999">
-        <i class="fa  fa-close"></i>
-        </div> --> 
+    
 
      <ul class="menu-fullscreen">
-    <li><a href="index">Back home</a></li>
-	  <li><a href="about">About</a></li>
-      <li><a href="work">Work</a></li>
-      <li><a href="myprojects">My projects</a></li>
+  	  <li><a href="index">Home</a></li>
+      <li><a href="portfolio">Work</a></li>
+      <li><a href="personalprojects">Personal projects</a></li>
+      <li><a href="about">About</a></li>
       <li><a href="contact">Contact</a></li>
     </ul>
 	
@@ -77,11 +74,10 @@
 
   </header>
 
- <!--LO ANTIGUO:
-
+	
 	<div class="clear"></div> 
 
- 
+  <!--Content-->
 
   <div class="content" id="ajax-content">
 
@@ -98,65 +94,42 @@
 
 
            <p>If you want to catch my updates...</p> <br>
-           <button class="button" onclick="window.open('https://www.instagram.com/cayetanamate/', '_blank')">
-			   FOLLOW ME
-			</button>       
+       <div style="text-align: center;">
+  <button
+    onclick="window.open('https://www.instagram.com/cayetanamate/', '_blank')"
+    style="
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: inline-block;
+      margin: 10px auto;
+    "
+    onmouseover="this.style.backgroundColor='gray'"
+    onmouseout="this.style.backgroundColor='black'"
+  >
+    FOLLOW ME
+  </button>
+</div>
+
+			
+
+
+        
           
-   </div>
-   </div>
+          
+        </div>
+        </div>
 
         
 	<br/><br/><br/><br/><br/><br/><br/><br/>      
   </div>
 
-	 HASTA AQUI-->
-	  
-	  
 
-<div class="clear"></div>
-
-<!--Content-->
-<div class="content" id="ajax-content">
-
-  <div class="text-intro" style="text-align: center; margin-top: 40px;">
-
-    <p>I hope you enjoyed my work!</p>
-
-    <p>
-      Do not hesitate to drop me a line if you want to get in touch.<br/>
-      <strong>cayetana.mate@gmail.com</strong>
-    </p>
-
-    <p>If you want to catch my updates...</p>
-    <br>
-
-    <button
-      onclick="window.open('https://www.instagram.com/cayetanamate/', '_blank')"
-      style="
-        background-color: black;
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: 8px;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        display: inline-block;
-        margin: 10px auto;
-      "
-      onmouseover="this.style.backgroundColor='gray'"
-      onmouseout="this.style.backgroundColor='black'"
-    >
-      FOLLOW ME
-    </button>
-
-    <br><br><br>
-
-    <img src="images/icon/sign.png" alt="Signature" style="display: block; margin: 0 auto;">
-    <br><br><br>
-
-  </div>
-</div>
 
 
   <!--Home Sidebar-->
@@ -176,7 +149,7 @@
 					<a href="https://www.linkedin.com/in/cayetanamate/"><i class="fa fa-linkedin"></i></a> 
 				</div> 
 				
-				<div class="copyright">© 2025 Cayetana Mate. All rights reserved.</div>
+				<div class="copyright" style="font-size: 12px; font-weight: 300;"> © 2025 Cayetana Mate. All rights reserved.</div>
 
 		
 			</div> 
@@ -206,3 +179,4 @@
 
 </body>
 </html>
+	
