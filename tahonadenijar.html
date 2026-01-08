@@ -3,21 +3,21 @@
 <html lang="en">
 <head>
 
-  <meta charset="utf-8">
-  <title>La Tahona de Níjar by Cayetana Mate</title>
-  <meta name="description" content="Cayetana Mate is a graphic designer and illustrator based in Madrid, Spain." />
-    <meta name="keywords" content="cayetana, cayetana mate, design, diseño, graphic, illustration, ilustracion, pan, almeria, tahona, nijar, designer" />
-  <link href="favicon.png" rel="icon" title="favicon" type="image/png" />
+	<meta charset="utf-8"> 
+	<title>Cayetana Mate | Graphic Designer & Illustrator</title>
+	<meta name="description" content="Graphic designer based in Ibiza, Cayetana Mate creates visual identities and illustrations with a distinctive and contemporary style." /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="author" content="cayetanamate.com">
+	
+	<!-- Favicon -->
+ 	<link href="images/icon/favicon.png" rel="icon" title="favicon" type="image/png" /> 
 
 <!--Style-->
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-responsive.css">
-  
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,25 +38,16 @@
 
 <div class="opacity-nav">
 
-        <div class="menu-index" id="buttons" style="z-index:999999">
-        <i class="fa  fa-close"></i>
-        </div>
-
+    
      <ul class="menu-fullscreen">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="personalprojects.html">+Projects</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+  	  <li><a href="index">🏠 Back home</a></li>
+	  <li><a href="about">🌴 About</a></li>
+      <li><a href="work">⏰ Work</a></li>
+      <li><a href="myprojects">✨ My projects</a></li>
+      <li><a href="contact">👋 Contact</a></li>
     </ul>
 
-    <!--Menu que no funciona por el ajax ese
-    <ul class="menu-fullscreen">
-      <li><a class="ajax-link" href="index.html">Home</a></li>
-      <li><a class="ajax-link" href="portfolio.html">Portfolio</a></li>
-      <li><a class="ajax-link" href="about.html">About</a></li>
-      <li><a class="ajax-link" href="contact.html">Contact</a></li>
-    </ul> -->
+  
 
 
 </div>
@@ -65,10 +56,18 @@
   <!--Header-->
   <header id="fullscreen">
     
-      <div class="logo" id="full"><a class="logo" href="index.html">CAYETANA MATE</a></div>
+        <!--SIN RESPONSIVE, ANTIGUO
+      <div class="logo" id="full"><a class="logo" href="index.html">CAYETANA MATE<img src="images/icon/sign_pq.png" width="60" margin-top: 220px> </a></div>--> 
+	  
+	  <div class="logo" id="full" style="white-space: nowrap;">
+  		<a class="logo" href="index.html" style="display: inline-flex; align-items: center; text-decoration: none;">
+   		 <span style="display: inline-block;">CAYETANA MATE</span>
+    		<img src="images/icon/sign.png" width="60" style="margin-top: 0; margin-left: 15px; vertical-align: middle;">
+  		</a>
+		</div>
       
         <div class="menu-index" id="button">
-        <i class="fa fa-bars"></i>
+       <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
         
   </header>
@@ -91,7 +90,14 @@
 
 
               <div class="two-column">
-                <p>The bakery "La Tahona de Níjar" (Almería) stars in 2017, after more than 30 years with another company, "La Tahona de Pedraza" (Segovia) opened in 1986.<br/> <br/> The owners are the same, and so is the goal, make a high quality bread using the best ingredients, and experiment to create new yummy breads and sweets, but this time the adventure will take place in Almería (South of Spain).</p>
+				<p>La panadería La Tahona de Níjar (Almería) comenzó su andadura en 2017, después de más de 30 años trabajando bajo otra empresa, La Tahona de Pedraza (Segovia), fundada en 1986.
+				<br/>
+				Los propietarios son los mismos, al igual que el objetivo: elaborar pan de alta calidad con los mejores ingredientes y experimentar para crear nuevos y deliciosos panes y dulces. Esta vez, sin embargo, la aventura tiene lugar en Almería, al sur de España.</p>
+					  
+                <p><i style="font-style: italic;">The bakery La Tahona de Níjar (Almería) began its journey in 2017, after more than 30 years working under another company, La Tahona de Pedraza (Segovia), founded in 1986.
+				<br/>
+				The owners are the same, as is the goal: to produce high-quality bread using the best ingredients and to experiment in order to create new and delicious breads and sweets. This time, however, the adventure takes place in Almería, in the south of Spain.</p>
+					
               </div>  
 
 
@@ -101,35 +107,32 @@
 
 
    
-    <img src="img/portfolio/29.jpg" width="100%" alt="Tahona de Níjar logo composition"><br/><br/>
+    <img src="images/work/TAHONA_NIJAR_2.png" width="100%" alt="Tahona, logo, composition"><br/><br/>
 
 
                 <ul class="portfolio-grid">
 
     <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/30.jpg">
-        <a class="ajax-link" href="single-fullscreen.html" alt="Tahona de Níjar cloth bag">  
+      <img src="images/work/TAHONA_NIJAR.png">
+        <a class="ajax-link" href="single-fullscreen.html" alt="Tahona, merchandising">  
         </a>      
     </li> 
 
     <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/31.jpg">
-        <a class="ajax-link" href="single-fullscreen.html" alt="Tahona de Níjar bussiness card">  
+      <img src="images/work/TAHONA_NIJAR.png">
+        <a class="ajax-link" href="single-fullscreen.html" alt="Tahona, merchandising">  
         </a>      
     </li> 
 
     <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/32.jpg">
-        <a class="ajax-link" href="single-fullscreen.html" alt="Tahona de Níjar logo with bread"> 
+      <img src="images/work/TAHONA_NIJAR_3.png">
+        <a class="ajax-link" href="single-fullscreen.html" alt="Tahona, merchandising"> 
         </a>      
     </li>  
 
       </ul><br/><br/>
 
-       <img src="img/portfolio/27.jpg" width="100%" alt= "La Tahona de Nijar"><br/><br/><br/><br/>
-
-     <img src="img/portfolio/34.jpg" width="100%" alt= "typography for La Tahona de Nijar"><br/><br/><br/><br/><br/><br/>
-    <img src="img/portfolio/28.jpg" width="100%" alt= "logo design for La Tahona de Níjar"><br/><br/>
+       
 
    
 
@@ -147,33 +150,27 @@
     </div>
    
 
-
-
-  <!--Home Sidebar-->
+ <!--Home Sidebar-->
 
 <div id="ajax-sidebar"></div>
 
 
   <!--Footer-->
 
-  <footer>
+ 	<footer> 
+			<div class="footer-margin"> 
+				
+				<div class="social-footer"> 
+					<a href="https://www.instagram.com/cayetanamate/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.behance.net/cayetanamate"><i class="fa fa-behance"></i></a> 
+					<a href="https://www.linkedin.com/in/cayetanamate/"><i class="fa fa-linkedin"></i></a> 
+				</div> 
+				
+			  <div class="copyright" style="font-size: 12px; font-weight: 300;"> © 2026 Cayetana Mate. All rights reserved.</div>
 
-    <div class="footer-margin">
-      <div class="social-footer">
-        <a href="https://www.behance.net/cayetanamate"><i class="fa fa-behance"></i></a>
-        <a href="https://www.instagram.com/cayetanamate/"><i class="fa fa-instagram"></i></a>
-        <a href="https://es.pinterest.com/cayetanamate/"><i class="fa fa-pinterest"></i></a>
-        <a href="https://www.linkedin.com/in/cayetanamate/"><i class="fa fa-linkedin"></i></a>
-      
-      </div>     
-      <div class="copyright">© Copyright 2020 All Rights Reserved cayetanamate.com</div>
-      
-
-    
-    </div>
-
-
-  </footer>
+		
+			</div> 
+		</footer> 
 
 
 
