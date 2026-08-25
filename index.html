@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/style-responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Estilos solo para esta página: arregla el gif de trabajo en móvil -->
+  <!-- Estilos solo para esta página: gif de escritorio + gif de móvil (encuadres distintos) -->
   <style>
     .latest-work-wrap{
       padding:0 24px;
@@ -28,10 +28,17 @@
       height:auto;
       display:inline-block;
     }
+    .gif-mobile{
+      display:none;
+    }
     @media (max-width:768px){
-      .latest-work-wrap img{
-        width:100%;
-        max-width:100%;
+      .gif-desktop{
+        display:none;
+      }
+      .gif-mobile{
+        display:inline-block;
+        width:90%;
+        max-width:90%;
       }
     }
   </style>
@@ -100,7 +107,12 @@
 		
 		<!-- <div class="text-intro" id="site-type"> <p>Meanwhile, here you have some of my latest work.<br>Hope you like them!</p> </div> -->
 		
-		<div align="center" class="latest-work-wrap"><a class="logo" href="work"><img src="images/about/cayetanamate_latest_works.gif" alt="12 years project by cayetana mate"></a></div> 
+		<div align="center" class="latest-work-wrap">
+			<a class="logo" href="work">
+				<img class="gif-desktop" src="images/about/cayetanamate_latest_works.gif" alt="12 years project by cayetana mate">
+				<img class="gif-mobile" src="images/about/cayetanamate_latest_works_mobile.gif" alt="12 years project by cayetana mate"> <!-- PENDIENTE: sube aquí tu versión vertical del gif -->
+			</a>
+		</div> 
 		
 	 
 	
