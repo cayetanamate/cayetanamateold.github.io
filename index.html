@@ -56,6 +56,17 @@
       font-size: 14px;
       line-height: 1.6;
     }
+
+    /* Más aire lateral en mobile para todos los bloques de texto */
+    @media (max-width:768px){
+      #site-type,
+      .latest-work-wrap,
+      .text-below-wrap{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        box-sizing: border-box;
+      }
+    }
   </style>
 </head> 
 	
@@ -93,8 +104,7 @@
 	  
 	  <div class="logo" id="full" style="white-space: nowrap;">
   		<a class="logo" href="index.html" style="display: inline-flex; align-items: center; text-decoration: none;">
-   		 <!--<span style="display: inline-block;">CAYETANA MATE</span>--> 
-    		<img src="images/icon/sign.png" width="60" style="margin-top: 0; margin-left: 15px; vertical-align: middle;">
+   		 <span style="display: inline-block;">CAYETANA MATE</span>
   		</a>
 		</div>
       
@@ -106,16 +116,20 @@
 	<div class="clear"></div> 
 	
 	<!--Content NUEVO--> 
-	<div class="content" id="ajax-content"> 
-    	<center>
+	
+	
+	<div class="content" id="ajax-content" style="padding-top: 60px;">
+    <center>
         <div class="text-intro" id="site-type" style="width: 95vw !important; max-width: none !important; margin: 0 auto !important; padding: 0 !important;">
-			
-            <h1 style="font-size: 38px; line-height: 1.1;">Hello, I'm Caye</h1> 
-          
+
+            <img src="images/icon/sign.png" alt="firma" style="display: block; margin: 0 auto 10px auto; width: 50%; max-width: 150px; height: auto;">
+
+           <!-- <h1 style="font-size: 38px; line-height: 1.1; font-weight: 900;">
+                Hello, I'm Caye
+            </h1>-->
+
         </div>
-			
-		
-    	</center> 
+    </center> 
 </div>
 		
 		</br>
@@ -124,8 +138,8 @@
 		<!--Imagen central--> 
 		
 		<div align="center" class="latest-work-wrap">
-			<a class="logo" href="work">
-				<p>HERE: PROJECTS + IDEAS + OBJETCS + EXPERIMENTS </p></br></br></br>
+			
+				<a class="logo" href="work">
 				<img class="gif-desktop" src="images/about/cayetanamate_latest_works.gif" alt="cayetana mate">
 				<img class="gif-mobile" src="images/about/cayetanamate_latest_works_mobile.gif" alt="cayetana mate"> 
 			</a>
@@ -134,13 +148,11 @@
 		<!--Texto debajo de la imagen--> 
 		<center>
 		<div class="text-below-wrap">
-			<p>
-                Combino diseño, ilustración y dirección de arte para dar forma junto a clientes y colaboradores, a ideas y proyectos con una mirada creativa y personal. </br>
-		
-                <br><br>
-                <i style="font-style: italic;">
-                    I work across design, illustration, and art direction, shaping ideas and projects alongside clients and collaborators with a creative and personal approach.</br>
-                    </i>
+			<h1 style="font-size: 13px; line-height: 1.1; font-weight: 600;">Combino diseño, ilustración y dirección de arte para dar forma junto a clientes y colaboradores, a ideas y proyectos con una mirada creativa y personal.</h1> </br>
+                <br>
+              
+                   <h1 style="font-size: 13px; line-height: 1.1; font-weight: 600;font-style: italic;"> I work across design, illustration, and art direction, shaping ideas and projects alongside clients and collaborators with a creative and personal approach.</h1></br>
+                    
             </p>
 		</div>
 		</center>
